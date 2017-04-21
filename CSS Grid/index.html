@@ -19,106 +19,118 @@
 <body>
 
         <!-- sticky nav -->
-        <nav>
-            <ul>
-                <!-- icons courtsey of fontawesome.io -->
-                <li><a href="#" title="Home"><i class="fa fa-home fa-lg"></i><span>Home</span></a></li>
-                <li><a href="#" title="About Us"><i class="fa fa-question-circle fa-lg"></i><span>About Us</span></a></li>
-                <li><a href="#" title="Blog"><i class="fa fa-newspaper-o fa-lg"></i><span>Blog</span></a></li>
-            </ul>
-        </nav>
+        <div class="row">
+            <nav class="col-3">
+                <ul>
+                    <!-- icons courtsey of fontawesome.io -->
+                    <li><a href="#" title="Home"><i class="fa fa-home fa-lg"></i><span>Home</span></a></li>
+                    <li><a href="#" title="About Us"><i class="fa fa-question-circle fa-lg"></i><span>About Us</span></a></li>
+                    <li><a href="#" title="Blog"><i class="fa fa-newspaper-o fa-lg"></i><span>Blog</span></a></li>
+                    <li><a href="#"><i class="fa fa-comment-o"></i><span>Contact Us</span></a></li>
+                </ul>
+            </nav>
+        </div>
         
-        <header>
-            <h1>Keeley & Kevin's Spring Break 2017</h1>
-        </header>
+        <div class="row">
+            <header class="col-3">
+                <h1>Keeley & Kevin's Spring Break 2017</h1>
+            </header>
+        </div>
         
-        <aside>
-            <form>
-                <fieldset>
-                    <legend>Contact Kevin and Keeley</legend>
-                    <label>Name</label>
-                    <input type="text" placeholder="Enter your name">
-                    
-                    <label>Email Address</label>
-                    <input type="email" placeholder="Enter your email address">
-                    
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="Enter your phone number">
-                    
-                    <label>Message</label>
-                    <textarea cols="30" rows="5" placeholder="Enter your message to Kevin and Keeley"></textarea>
-                    
-                    <button type="button">Submit</button>
-                </fieldset>
-            </form>                
-        </aside>
-
-        <main>
-            <!-- use appropriately-sized picture depending on the client width -->
-           <!-- <picture> -->
-                <!-- [if IE 9]<video style-"display: none;"><![endif] -->
-                <!--<source srcset="img/MVCC/KKfalmouth-480.jpg" media="(min-width: 582px)">
-                <source srcset="img/MVCC/KKfalmouth-400.png" media="(min-width: 581px)">
-                <source srcset="img/MVCC/KKfalmouth-245.png" media="(max-width: 494px)">-->
-                <!-- [if IE 9]</video><![endif] -->
-                <img src="img/index/KandK-large.png" alt="Kevin and Keeley">
-            <!--</picture>-->
-            
-            <div>
-                <h2>Keeley and Kevin's Spring Break 2017</h2>
-                <p>Keeley and Kevin spent their 2017 spring break sleeping in, swimming with dolphins, and relaxing by the beach and pool in Nassau, Bahamas. This website is a blog about all of their spring break Bahamas adventures!</p>
-                <p><a href="#">Learn more</a> about Kevin and Keeley</p>
-                <p><a href="#">Learn more</a> about their summer adventures</p>
-            </div>
-        </main>
-        
-        <article>
-            <h3>Monday</h3>
-            <p>March 13, 2017</p>
-            <img src="img/index/mon-main.png" alt="Kevin and Keeley">
-            <p>Monday was a very long day. We woke up at 5:00am, quickly showered, got an Uber, and headed to Boston Logan Airport for our 8:30am flight to Pittsburgh, PA. We probably didn't need to get up and going so early because it only took 10 minutes to get our bag checked and get through security. We had an hour and a half to kill before boarding. We got some coffee and breakfast and waited patiently for our first flight...</p>
-            <button type="button">Read More</button>
-        </article>
+        <div class="row">
+            <aside class="col-1">
+                <form>
+                    <fieldset>
+                        <legend>Contact Kevin and Keeley</legend>
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name">
+                        
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email address">
+                        
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number">
+                        
+                        <label>Message</label>
+                        <textarea cols="30" rows="5" placeholder="Enter your message to Kevin and Keeley"></textarea>
+                        
+                        <button type="button">Submit</button>
+                    </fieldset>
+                </form>                
+            </aside>
     
-        <article>
-            <h3>Tuesday</h3>
-            <p>March 14, 2017</p>
-            <img src="img/index/tues-main.png" alt="Kevin and Keeley">
-            <p>We woke up Tuesday morning around 9:00am and promptly changed and headed down to get breakfast. We ate breakfast seaside. The restaurant had every breakfast food you could ever imagine from simple toast to fancy customized omelets to blueberry blintzes and everything in between. I think we both ate our weight in food that morning...</a></p>
-            <button type="button">Read More</button>
-        </article>
-
-        <article>
-            <h3>Wednesday</h3>
-            <p>March 15, 2017</p>
-            <img src="img/index/wed-main.png" alt="Sunrise">
-            <p>We woke up at 6:30am in order to have enough time to eat breakfast, pack for the day, and catch our 7:30am bus to Atlantis. I didn't imagine we'd have to wake up so early while on vacation, but it was so worth it.</p>
-            <p>The bus ride to Atlantis took a while because of traffic, but it was nice to see all of the Bahamian architecture and downtown Nassau along the route. Atlantis is on Paradise Island, which is separate from mainland Nassau, so we could see it from afar during the entire ride...</p>
-            <button type="button">Read More</button>
-        </article>
+            <main class="col-2-1">
+                <!-- use appropriately-sized picture depending on the client width -->
+               <!-- <picture> -->
+                    <!-- [if IE 9]<video style-"display: none;"><![endif] -->
+                    <!--<source srcset="img/MVCC/KKfalmouth-480.jpg" media="(min-width: 582px)">
+                    <source srcset="img/MVCC/KKfalmouth-400.png" media="(min-width: 581px)">
+                    <source srcset="img/MVCC/KKfalmouth-245.png" media="(max-width: 494px)">-->
+                    <!-- [if IE 9]</video><![endif] -->
+                    <img src="img/index/KandK-large.png" alt="Kevin and Keeley">
+                <!--</picture>-->
+                
+                <div>
+                    <h2>Keeley and Kevin's Spring Break 2017</h2>
+                    <p>Keeley and Kevin spent their 2017 spring break sleeping in, swimming with dolphins, and relaxing by the beach and pool in Nassau, Bahamas. This website is a blog about all of their spring break Bahamas adventures!</p>
+                    <p><a href="#">Learn more</a> about Kevin and Keeley</p>
+                    <p><a href="#">Learn more</a> about their summer adventures</p>
+                </div>
+            </main>
+        </div>
         
-        <article>
-            <h3>Thursday</h3>
-            <p>March 16, 2017</p>
-            <img src="img/index/thurs-main.png" alt="Cable Beach">
-            <p>We slept in again on Thursday and then did the same thing as the past two days - ate delicious breakfast by the beach.</p>
-            <p>Once we were done with breakfast, we changed into bathing suits, got some drinks, found some nice lounge chairs on the beach, and spent most of the day just relaxing on the beach. We read books, napped, talked, and generally just enjoyed being together. Of course, we also went swimming in the ocean a few times...</p>
-            <button type="button">Read More</button>
-        </article>
-
-        <article>
-            <h3>Friday</h3>
-            <p>March 17, 2017</p>
-            <img src="img/index/fri-main.jpg" alt="Cable Beach">
-            <p>This was our last day in the Bahamas and surprisingly, we were looking forward to coming home. We'd had a ton of fun, but I missed my job and we both missed our cat and our bed.</p>
-            <p>Per usual, we woke up and had a nice seaside breakfast. We then went back to the room to shower, pack, and get dressed. Since our flight wasn't until 3pm, we wore clothing appropriate for the Bahamas, but kept a change of winter clothes in our backpacks so we could change before leaving the hotel...</p>
-            <button type="button">Read More</button>
-        </article>
+        <div class="row">
+            <article class="col-1-2">
+                <h3>Monday</h3>
+                <p>March 13, 2017</p>
+                <img src="img/index/mon-main.png" alt="Kevin and Keeley">
+                <p>Monday was a very long day. We woke up at 5:00am, quickly showered, got an Uber, and headed to Boston Logan Airport for our 8:30am flight to Pittsburgh, PA. We probably didn't need to get up and going so early because it only took 10 minutes to get our bag checked and get through security. We had an hour and a half to kill before boarding. We got some coffee and breakfast and waited patiently for our first flight...</p>
+                <button type="button">Read More</button>
+            </article>
         
-        <footer>
-            <!-- icons courtsey of fontawesome.io -->
-            <p><a href="#"><i class="fa fa-sun-o"></i>Keeley and Kevin's Spring Break 2017<i class="fa fa-glass"></i></a></p>
-        </footer>
-    </div>
+            <article class="col-1-2">
+                <h3>Tuesday</h3>
+                <p>March 14, 2017</p>
+                <img src="img/index/tues-main.png" alt="Kevin and Keeley">
+                <p>We woke up Tuesday morning around 9:00am and promptly changed and headed down to get breakfast. We ate breakfast seaside. The restaurant had every breakfast food you could ever imagine from simple toast to fancy customized omelets to blueberry blintzes and everything in between. I think we both ate our weight in food that morning...</a></p>
+                <button type="button">Read More</button>
+            </article>
+    
+            <article class="col-1-2">
+                <h3>Wednesday</h3>
+                <p>March 15, 2017</p>
+                <img src="img/index/wed-main.png" alt="Sunrise">
+                <p>We woke up at 6:30am in order to have enough time to eat breakfast, pack for the day, and catch our 7:30am bus to Atlantis. I didn't imagine we'd have to wake up so early while on vacation, but it was so worth it.</p>
+                <p>The bus ride to Atlantis took a while because of traffic, but it was nice to see all of the Bahamian architecture and downtown Nassau along the route. Atlantis is on Paradise Island, which is separate from mainland Nassau, so we could see it from afar during the entire ride...</p>
+                <button type="button">Read More</button>
+            </article>
+        </div>
+        
+        <div class="row">
+            <article class="col-1">
+                <h3>Thursday</h3>
+                <p>March 16, 2017</p>
+                <img src="img/index/thurs-main.png" alt="Cable Beach">
+                <p>We slept in again on Thursday and then did the same thing as the past two days - ate delicious breakfast by the beach.</p>
+                <p>Once we were done with breakfast, we changed into bathing suits, got some drinks, found some nice lounge chairs on the beach, and spent most of the day just relaxing on the beach. We read books, napped, talked, and generally just enjoyed being together. Of course, we also went swimming in the ocean a few times...</p>
+                <button type="button">Read More</button>
+            </article>
+    
+            <article class="col-1">
+                <h3>Friday</h3>
+                <p>March 17, 2017</p>
+                <img src="img/index/fri-main.jpg" alt="Cable Beach">
+                <p>This was our last day in the Bahamas and surprisingly, we were looking forward to coming home. We'd had a ton of fun, but I missed my job and we both missed our cat and our bed.</p>
+                <p>Per usual, we woke up and had a nice seaside breakfast. We then went back to the room to shower, pack, and get dressed. Since our flight wasn't until 3pm, we wore clothing appropriate for the Bahamas, but kept a change of winter clothes in our backpacks so we could change before leaving the hotel...</p>
+                <button type="button">Read More</button>
+            </article>
+        </div>
+        
+        <div class="row">
+            <footer>
+                <!-- icons courtsey of fontawesome.io -->
+                <p><a href="#"><i class="fa fa-sun-o"></i>Keeley and Kevin's Spring Break 2017<i class="fa fa-glass"></i></a></p>
+            </footer>
+        </div>
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/styles.css",
+	"sources": [
+		"../scss/styles.scss"
+	],
+	"sourcesContent": [
+		"/* border box everything in the universe, and what comes before and after, by Paul Irish \r\nhttp://www.paulirish.com/2012/box-sizing-border-box-ftw/ */\r\nhtml {\r\n  box-sizing: border-box;\r\n}\r\n*, *:before, *:after {\r\n  box-sizing: inherit;\r\n}\r\n.row {\r\n\tdisplay: flex;\r\n    flex-flow: row wrap;\r\n    flex: 0 1 auto;\r\n}"
+	],
+	"mappings": "AAAA;2DAC2D;;AAC3D,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAW;CACxB;;;AACD,AAAA,CAAC,EAAE,AAAC,CAAA,AAAA,OAAO,EAAE,AAAC,CAAA,AAAA,MAAM,CAAC;EACnB,UAAU,EAAE,OAAQ;CACrB;;;AACD,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAK;EACX,SAAS,EAAE,QAAS;EACpB,IAAI,EAAE,QAAS;CAClB",
+	"names": []
+}
