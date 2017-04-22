@@ -1,0 +1,54 @@
+/* border box everything in the universe, and what comes before and after, by Paul Irish 
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+nav, footer {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    justify-content: center;
+}
+
+.row {
+	display: flex;
+    flex-flow: row wrap;
+    flex: 0 1 auto;
+    justify-content: center;
+}
+
+[class*='col-'], aside, .mainpic, main{
+	padding: 0 1em;
+    margin: 1em;
+}
+
+.col-1-2 {
+	flex: 0 0 29%;
+	background-color: #ffc;
+}
+
+.col-3-1 {
+    flex: 0 0 92%;
+    background-color: #fcf;
+}
+
+aside {
+    flex: 0 0 14%;
+    background-color: #fcf;
+}
+
+.mainpic, main {
+    flex: 0 0 32.4%;
+	background-color: #ffc;
+}
+
+//.col-push-1 {
+//	order: 2;
+//}
+//.col-pull-3 {
+//	order: 1;
+//}

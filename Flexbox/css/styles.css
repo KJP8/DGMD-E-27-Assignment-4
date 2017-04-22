@@ -1,0 +1,59 @@
+/* border box everything in the universe, and what comes before and after, by Paul Irish 
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 3, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 6, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 10, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+nav, footer {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+  justify-content: center;
+}
+
+/* line 17, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 auto;
+  justify-content: center;
+}
+
+/* line 24, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+[class*='col-'], aside, .mainpic, main {
+  padding: 0 1em;
+  margin: 1em;
+}
+
+/* line 29, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+.col-1-2 {
+  flex: 0 0 29%;
+  background-color: #ffc;
+}
+
+/* line 34, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+.col-3-1 {
+  flex: 0 0 92%;
+  background-color: #fcf;
+}
+
+/* line 39, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+aside {
+  flex: 0 0 14%;
+  background-color: #fcf;
+}
+
+/* line 44, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+.mainpic, main {
+  flex: 0 0 32.4%;
+  background-color: #ffc;
+}
+
+/*# sourceMappingURL=../css/styles.map */

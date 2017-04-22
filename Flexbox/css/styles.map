@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/styles.css",
+	"sources": [
+		"../scss/styles.scss"
+	],
+	"sourcesContent": [
+		"/* border box everything in the universe, and what comes before and after, by Paul Irish \r\nhttp://www.paulirish.com/2012/box-sizing-border-box-ftw/ */\r\nhtml {\r\n  box-sizing: border-box;\r\n}\r\n*, *:before, *:after {\r\n  box-sizing: inherit;\r\n}\r\n\r\nnav, footer {\r\n    display: flex;\r\n    flex-flow: row wrap;\r\n    flex: 0 1 auto;\r\n    justify-content: center;\r\n}\r\n\r\n.row {\r\n\tdisplay: flex;\r\n    flex-flow: row wrap;\r\n    flex: 0 1 auto;\r\n    justify-content: center;\r\n}\r\n\r\n[class*='col-'], aside, .mainpic, main{\r\n\tpadding: 0 1em;\r\n    margin: 1em;\r\n}\r\n\r\n.col-1-2 {\r\n\tflex: 0 0 29%;\r\n\tbackground-color: #ffc;\r\n}\r\n\r\n.col-3-1 {\r\n    flex: 0 0 92%;\r\n    background-color: #fcf;\r\n}\r\n\r\naside {\r\n    flex: 0 0 14%;\r\n    background-color: #fcf;\r\n}\r\n\r\n.mainpic, main {\r\n    flex: 0 0 32.4%;\r\n\tbackground-color: #ffc;\r\n}\r\n\r\n//.col-push-1 {\r\n//\torder: 2;\r\n//}\r\n//.col-pull-3 {\r\n//\torder: 1;\r\n//}"
+	],
+	"mappings": "AAAA;2DAC2D;;AAC3D,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAW;CACxB;;;AACD,AAAA,CAAC,EAAE,AAAC,CAAA,AAAA,OAAO,EAAE,AAAC,CAAA,AAAA,MAAM,CAAC;EACnB,UAAU,EAAE,OAAQ;CACrB;;;AAED,AAAA,GAAG,EAAE,AAAA,MAAM,CAAC;EACR,OAAO,EAAE,IAAK;EACd,SAAS,EAAE,QAAS;EACpB,IAAI,EAAE,QAAS;EACf,eAAe,EAAE,MAAO;CAC3B;;;AAED,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAK;EACX,SAAS,EAAE,QAAS;EACpB,IAAI,EAAE,QAAS;EACf,eAAe,EAAE,MAAO;CAC3B;;;CAED,AAAA,AAAc,KAAb,EAAO,MAAM,AAAb,GAAgB,AAAA,KAAK,EAAE,AAAA,QAAQ,EAAE,AAAA,IAAI,CAAA;EACrC,OAAO,EAAE,KAAM;EACZ,MAAM,EAAE,GAAI;CACf;;;AAED,AAAA,QAAQ,CAAC;EACR,IAAI,EAAE,OAAQ;EACd,gBAAgB,EAAE,IAAK;CACvB;;;AAED,AAAA,QAAQ,CAAC;EACL,IAAI,EAAE,OAAQ;EACd,gBAAgB,EAAE,IAAK;CAC1B;;;AAED,AAAA,KAAK,CAAC;EACF,IAAI,EAAE,OAAQ;EACd,gBAAgB,EAAE,IAAK;CAC1B;;;AAED,AAAA,QAAQ,EAAE,AAAA,IAAI,CAAC;EACX,IAAI,EAAE,SAAU;EACnB,gBAAgB,EAAE,IAAK;CACvB",
+	"names": []
+}
