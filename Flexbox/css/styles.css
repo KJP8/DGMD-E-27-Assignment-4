@@ -198,4 +198,131 @@ footer i {
   flex: 0 0 100%;
 }
 
+/* Large Devices, Laptops */
+@media (max-width: 1125px) {
+  /* line 192, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .col-2-1 {
+    flex: 0 0 45%;
+  }
+}
+
+/* Large Devices, Laptops */
+@media (max-width: 1020px) {
+  /* line 199, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .col-2-1 {
+    flex: 0 0 35%;
+  }
+}
+
+/* Medium Devices, Laptops, Tablets*/
+@media (max-width: 945px) {
+  /* line 206, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .art3 {
+    margin-top: 2em;
+  }
+}
+
+/* Medium Devices, Laptops, Tablets*/
+@media (max-width: 864px) {
+  /* line 213, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .col-2-1 {
+    flex: 0 0 100%;
+  }
+  /* line 217, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  header {
+    background: url(../img/background/background-medium.jpg) no-repeat;
+  }
+  /* line 221, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  aside {
+    order: 1;
+  }
+  /* line 225, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .mainimg {
+    order: 2;
+  }
+  /* line 229, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  main {
+    order: 3;
+    text-align: center;
+  }
+}
+
+/* Small Devices, Tablets, Phones*/
+@media (max-width: 638px) {
+  /* line 237, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .row {
+    justify-content: center;
+  }
+  /* line 244, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  nav ul li span {
+    display: none;
+  }
+  /* line 248, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  nav ul li i {
+    visibility: visible;
+    margin-right: 1.5em;
+  }
+  /* line 256, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .art2, .art5 {
+    margin-top: 2em;
+  }
+}
+
+/* Small Devices, Tablets, Phones*/
+@media (max-width: 570px) {
+  /* line 263, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .row {
+    align-content: center;
+  }
+  /* line 266, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .col-1 {
+    flex: 0 0 90%;
+  }
+  /* line 270, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  aside {
+    order: 3;
+  }
+  /* line 274, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .mainimg {
+    order: 1;
+    padding-left: 7em;
+  }
+  /* line 279, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  main {
+    order: 2;
+    text-align: center;
+  }
+  /* line 284, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  article {
+    margin: auto 1em;
+  }
+}
+
+/* Small Devices, Phones*/
+@media (max-width: 360px) {
+  /* line 291, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  header {
+    background: url(../img/background/background-sm.jpg) no-repeat;
+  }
+  /* line 294, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  header h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  /* line 300, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  .mainimg {
+    order: 1;
+    padding-left: 0;
+  }
+  /* line 308, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  nav ul li i {
+    visibility: visible;
+    margin-right: 0.5em;
+  }
+  /* line 316, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+  article {
+    margin: auto 0.5em;
+  }
+}
+
 /*# sourceMappingURL=../css/styles.map */

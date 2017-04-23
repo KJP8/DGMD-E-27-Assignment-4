@@ -185,3 +185,135 @@ footer {
 .col-4 {
 	flex: 0 0 100%;
 }
+
+// Media queries, adjusting grid for changing widths
+/* Large Devices, Laptops */
+@media (max-width: 1125px) {
+    .col-2-1 {
+        flex: 0 0 45%;
+    }
+}
+
+/* Large Devices, Laptops */
+@media (max-width: 1020px) {
+    .col-2-1 {
+        flex: 0 0 35%;
+    }
+}
+
+/* Medium Devices, Laptops, Tablets*/
+@media (max-width: 945px) {
+    .art3 {
+        margin-top: 2em;
+    }
+}
+
+/* Medium Devices, Laptops, Tablets*/
+@media (max-width: 864px) {
+    .col-2-1 {
+        flex: 0 0 100%;
+    }
+    
+    header {
+        background: url(../img/background/background-medium.jpg) no-repeat;
+    }
+    
+    aside {
+        order: 1;
+    }
+    
+    .mainimg {
+        order: 2;
+    }
+    
+    main {
+        order: 3;
+        text-align: center;
+    }
+}
+
+/* Small Devices, Tablets, Phones*/
+@media (max-width: 638px) {
+    .row {
+        justify-content: center;
+    }
+    
+    nav {        
+        ul {
+            li {
+                span {
+                   display: none;
+                }
+                
+                i {
+                    visibility: visible;
+                    margin-right: 1.5em;
+                }
+            }
+        }
+    }
+    
+    .art2, .art5 {
+        margin-top: 2em;
+    }
+}
+
+/* Small Devices, Tablets, Phones*/
+@media (max-width: 570px) {
+    .row {
+        align-content: center;
+    }
+    .col-1 {
+        flex: 0 0 90%;
+    }
+    
+    aside {
+        order: 3;
+    }
+    
+    .mainimg {
+        order: 1;
+        padding-left: 7em; 
+    }
+    
+    main {
+        order: 2;
+        text-align: center;
+    }
+    
+    article {
+        margin: auto 1em;
+    }
+}
+
+/* Small Devices, Phones*/
+@media (max-width: 360px) {
+    header {
+        background: url(../img/background/background-sm.jpg) no-repeat;
+        
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+    
+    .mainimg {
+        order: 1;
+        padding-left: 0; 
+    }
+    
+    nav {        
+        ul {
+            li {
+                i {
+                    visibility: visible;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+    
+    article {
+        margin: auto 0.5em;
+    }
+}
