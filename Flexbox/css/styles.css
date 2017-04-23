@@ -1,51 +1,55 @@
-/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* border box everything in the universe, and what comes before and after, by Paul Irish 
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 13, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 16, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 21, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 body {
   font-family: 'Lora', 'Geneva', 'Tahoma', serif;
 }
 
-/* line 16, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 25, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 h1, h2, h3 {
   font-family: 'Seaweed Script', cursive;
   font-weight: 100;
 }
 
-/* line 21, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 30, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 a:link, a:visited {
   text-decoration: none;
   color: #C84280;
 }
 
-/* line 26, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 a:hover, a:active {
   text-decoration: none;
   color: #a73067;
 }
 
-/* line 31, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside, main, article {
-  padding: 0 2em;
-}
-
-/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 40, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav, footer {
   background-color: #D8F5F2;
 }
 
-/* line 40, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 45, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav {
   border-bottom: 1px solid #9be5de;
-  padding: 1em;
   top: 0;
-  position: sticky;
-  z-index: 100000;
 }
 
-/* line 47, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 49, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul {
-  margin: 0;
+  padding-bottom: 1em;
 }
 
-/* line 50, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 52, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul li {
   list-style: none;
   float: left;
@@ -53,412 +57,35 @@ nav ul li {
   font-weight: bold;
 }
 
-/* line 56, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
+/* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul li i {
   visibility: hidden;
 }
 
-/* line 64, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-header {
-  background: url(../img/background/background-large.jpg) no-repeat;
-  height: 300px;
-  margin-top: -1em;
+/* line 66, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/* line 69, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-header h1 {
-  text-align: right;
-  margin-right: 1em;
-  color: #FDF7EF;
-  font-size: 3em;
+/* line 71, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+[class*='col-'] {
+  padding: 0 2em;
 }
 
-/* line 78, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.mainimg {
-  margin: 0 auto;
+/* line 75, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.col-1 {
+  flex: 0 0 25%;
 }
 
-/* line 82, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-main {
-  padding-left: 0;
-  margin-bottom: 3em;
+/* line 79, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.col-2-1 {
+  flex: 0 0 50%;
 }
 
-/* line 86, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-main h2 {
-  color: #2EBAAB;
-  font-size: 2em;
-}
-
-/* line 91, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-main p {
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-
-/* line 100, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside form {
-  margin: 1em auto;
-  padding: 0.5em;
-  background-color: #FDF7EF;
-  color: #2EBAAB;
-}
-
-/* line 106, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside form legend {
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-/* line 111, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside form label {
-  float: left;
-  clear: right;
-  margin-right: 5em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-
-/* line 119, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside form input, aside form textarea {
-  margin-bottom: 3em;
-}
-
-/* line 126, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art1, .art4 {
-  margin-left: 2em;
-}
-
-/* line 130, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-article {
-  background-color: #d9eaed;
-  border: 1px solid #94c4cc;
-  padding-bottom: 1.5em;
-}
-
-/* line 135, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-article h3 {
-  font-size: 1.5em;
-  color: #39A2B5;
-}
-
-/* line 140, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-article p:first-of-type {
-  color: #C84280;
-  line-height: 0.5em;
-}
-
-/* line 145, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-article p {
-  line-height: 1.2em;
-}
-
-/* line 151, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-footer {
-  border-top: 1px solid #9be5de;
-  padding: 1em;
-}
-
-/* line 155, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-footer p {
-  margin: 0;
-  text-align: center;
-}
-
-/* line 160, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-footer i {
-  margin: 0 1em;
-}
-
-/* line 167, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.wrapper {
-  display: grid;
-  grid-gap: 1em;
-  margin: 0 auto;
-}
-
-/* line 173, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-nav {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
-}
-
-/* line 178, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-header {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-}
-
-/* line 183, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.mainimg {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-/* line 188, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-main {
-  grid-column: 2 / 4;
-  grid-row: 3 / 4;
-}
-
-/* line 193, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-aside {
-  grid-column: 4 / 5;
-  grid-row: 3 / 6;
-}
-
-/* line 198, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art1 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-
-/* line 203, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art2 {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-}
-
-/* line 208, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art3 {
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
-}
-
-/* line 213, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art4 {
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-}
-
-/* line 218, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-.art5 {
-  grid-column: 2 / 3;
-  grid-row: 5 / 6;
-}
-
-/* line 223, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-footer {
-  grid-column: 1 / 5;
-  grid-row: 6 / 7;
-}
-
-/* Large Devices, Laptops */
-@media (max-width: 1285px) {
-  /* line 232, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art1, .art3, .art5 {
-    margin-left: 2em;
-  }
-  /* line 236, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art4 {
-    margin: 0;
-  }
-  /* line 240, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .mainimg {
-    padding-top: 3em;
-  }
-  /* line 244, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  nav {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-  }
-  /* line 249, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-  }
-  /* line 254, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .mainimg {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-  /* line 259, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  main {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-  /* line 264, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  aside {
-    grid-column: 3 / 4;
-    grid-row: 3 / 6;
-  }
-  /* line 269, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art1 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-  /* line 274, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art2 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-  /* line 279, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art3 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-  }
-  /* line 284, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art4 {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-  }
-  /* line 289, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art5 {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-  }
-  /* line 294, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  footer {
-    grid-column: 1 / 4;
-    grid-row: 7 / 8;
-  }
-}
-
-/* Medium Devices, Laptops, Tablets */
-@media (min-width: 768px) and (max-width: 1055px) {
-  /* line 303, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header {
-    background: url(../img/background/background-medium.jpg) no-repeat;
-  }
-  /* line 307, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .mainimg {
-    padding-top: 2em;
-  }
-  /* line 311, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art2, .art4 {
-    margin-right: 2em;
-  }
-  /* line 315, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  nav {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
-  /* line 320, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-  }
-  /* line 325, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .mainimg {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-  /* line 330, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  main {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-  /* line 335, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  aside {
-    grid-column: 2 / 3;
-    grid-row: 6 / 7;
-  }
-  /* line 340, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art1 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-  /* line 345, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art2 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-  /* line 350, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art3 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-  }
-  /* line 355, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art4 {
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-  }
-  /* line 360, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art5 {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-  }
-  /* line 365, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  footer {
-    grid-column: 1 / 3;
-    grid-row: 7 / 8;
-  }
-}
-
-/* Small Devices, Tablets, Phones */
-@media (max-width: 480px) {
-  /* line 373, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  main, aside, .art1, .art2, .art3, .art4, .art5 {
-    margin: 0 2em;
-  }
-  /* line 377, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header {
-    background: url(../img/background/background-sm.jpg) no-repeat;
-  }
-  /* line 380, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header h1 {
-    font-size: 2em;
-    text-align: center;
-  }
-  /* line 386, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  main {
-    text-align: center;
-  }
-  /* line 390, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  nav {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  /* line 395, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  header {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-  /* line 400, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .mainimg {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-  /* line 405, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  main {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-  /* line 410, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  aside {
-    grid-column: 1 / 2;
-    grid-row: 10 / 11;
-  }
-  /* line 415, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art1 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-  }
-  /* line 420, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art2 {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-  }
-  /* line 425, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art3 {
-    grid-column: 1 / 2;
-    grid-row: 7 / 8;
-  }
-  /* line 430, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art4 {
-    grid-column: 1 / 2;
-    grid-row: 8 / 9;
-  }
-  /* line 435, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  .art5 {
-    grid-column: 1 / 2;
-    grid-row: 9 / 10;
-  }
-  /* line 440, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/CSS Grid/scss/styles.scss */
-  footer {
-    grid-column: 1 / 2;
-    grid-row: 11 / 12;
-  }
+/* line 83, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.col-4 {
+  flex: 0 0 100%;
 }
 
 /*# sourceMappingURL=../css/styles.map */
