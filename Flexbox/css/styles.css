@@ -42,14 +42,16 @@ nav, footer {
 nav {
   border-bottom: 1px solid #9be5de;
   top: 0;
+  position: fixed;
+  width: 100%;
 }
 
-/* line 49, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 51, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul {
   padding-bottom: 1em;
 }
 
-/* line 52, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 54, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul li {
   list-style: none;
   float: left;
@@ -57,33 +59,141 @@ nav ul li {
   font-weight: bold;
 }
 
-/* line 58, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 60, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 nav ul li i {
   visibility: hidden;
 }
 
-/* line 66, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 68, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+header {
+  background: url(../img/background/background-large.jpg) no-repeat;
+  height: 300px;
+  margin-top: -1em;
+}
+
+/* line 73, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+header h1 {
+  text-align: right;
+  margin-right: 1em;
+  color: #FDF7EF;
+  font-size: 3em;
+}
+
+/* line 82, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.mainimg {
+  margin: 0 auto;
+}
+
+/* line 88, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+main h2 {
+  color: #2EBAAB;
+  font-size: 2em;
+}
+
+/* line 93, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+main p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* line 102, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+aside form {
+  margin: 1em auto;
+  padding: 0.5em;
+  background-color: #FDF7EF;
+  color: #2EBAAB;
+}
+
+/* line 108, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+aside form legend {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/* line 113, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+aside form label {
+  float: left;
+  clear: right;
+  margin-right: 5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+/* line 121, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+aside form input, aside form textarea {
+  margin-bottom: 1.5em;
+}
+
+/* line 127, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+article {
+  background-color: #d9eaed;
+  border: 1px solid #94c4cc;
+  padding-bottom: 1.5em;
+  margin: 0 1em;
+}
+
+/* line 133, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+article h3 {
+  font-size: 1.5em;
+  color: #39A2B5;
+}
+
+/* line 138, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+article p:first-of-type {
+  color: #C84280;
+  line-height: 0.5em;
+}
+
+/* line 143, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+article p {
+  line-height: 1.2em;
+}
+
+/* line 149, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+footer {
+  border-top: 1px solid #9be5de;
+}
+
+/* line 152, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+footer p {
+  margin: 0;
+  text-align: center;
+  padding: 1em;
+}
+
+/* line 158, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+footer i {
+  margin: 0 1em;
+}
+
+/* line 163, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 .row {
   display: flex;
   flex-flow: row wrap;
+  margin: 2em 0;
 }
 
-/* line 71, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 169, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+.last {
+  margin-bottom: 0;
+}
+
+/* line 173, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 [class*='col-'] {
-  padding: 0 2em;
+  padding: 0 1em;
 }
 
-/* line 75, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 177, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 .col-1 {
   flex: 0 0 25%;
 }
 
-/* line 79, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 181, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 .col-2-1 {
   flex: 0 0 50%;
 }
 
-/* line 83, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
+/* line 185, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Flexbox/scss/styles.scss */
 .col-4 {
   flex: 0 0 100%;
 }

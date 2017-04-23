@@ -45,6 +45,8 @@ nav, footer {
 nav {
     border-bottom: 1px solid $navbar-border;
     top: 0;
+    position: fixed;
+    width: 100%;
     
     ul {
         padding-bottom: 1em;
@@ -62,14 +64,114 @@ nav {
     }
 }
 
+// header styles
+header {
+    background: url(../img/background/background-large.jpg) no-repeat;
+    height: 300px;
+    margin-top: -1em;
+    
+    h1 {
+        text-align: right;
+        margin-right: 1em;
+        color: $header-color;
+        font-size: 3em;
+    }
+}
+
+// main styles
+.mainimg {
+    margin: 0 auto;
+}
+
+main {
+    
+    h2 {
+        color: $header-secondary-color;
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+}
+
+// aside styles
+aside {
+    
+    form {
+        margin: 1em auto;
+        padding: 0.5em;
+        background-color: $header-color;
+        color: $header-secondary-color;
+        
+        legend {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        
+        label {
+            float: left;
+            clear: right;
+            margin-right: 5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+article {
+    background-color: $panel-background-color;
+    border: 1px solid $panel-border-color;
+    padding-bottom: 1.5em;
+    margin: 0 1em;
+    
+    h3 {
+        font-size: 1.5em;
+        color: $header-tertiary-color;
+    }
+    
+    p:first-of-type {
+        color: $link-color;
+        line-height: 0.5em;
+    }
+    
+    p {
+        line-height: 1.2em;
+    }
+}
+
+// footer styles
+footer {
+    border-top: 1px solid $navbar-border; 
+    
+    p {
+        margin: 0;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    i {
+        margin: 0 1em;
+    }
+}
 // Flexbox grid styles
 .row {
 	display: flex;
     flex-flow: row wrap;
+    margin: 2em 0;
+}
+
+.last {
+    margin-bottom: 0;
 }
 
 [class*='col-']{
-	padding: 0 2em;
+	padding: 0 1em;
 }
 
 .col-1 {
