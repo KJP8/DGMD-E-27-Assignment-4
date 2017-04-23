@@ -1,67 +1,228 @@
+// Variables
+$navbar-color: #D8F5F2;
+$navbar-border: #9be5de;
+$header-color: #FDF7EF;
+$header-secondary-color: #2EBAAB;
+$header-tertiary-color: #39A2B5;
+$link-color: #C84280;
+$panel-background-color: #d9eaed;
+$panel-border-color: #94c4cc;
+
+// Global styles
+body {
+    font-family: 'Lora', 'Geneva', 'Tahoma', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Seaweed Script', cursive;
+    font-weight: 100;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: $link-color;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: darken(#C84280, 10%);
+}
+
+aside, .mainimg, main, article {
+    padding: 0 2em;
+}
+
+nav, footer {
+    background-color: $navbar-color;
+}
+
+// nav styles
+nav {
+    border-bottom: 1px solid $navbar-border;
+    padding: 1em;
+    top: 0;
+    position: sticky;
+    z-index: 100000;
+    
+    ul {
+        margin: 0;
+        
+        li {
+            list-style: none;
+            float: left;
+            margin-right: 1em;
+            font-weight: bold;
+            
+            i {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+// header styles
+header {
+    background: url(../img/background/background-large.jpg) no-repeat;
+    height: 300px;
+    margin-top: -1em;
+    
+    h1 {
+        text-align: right;
+        margin-right: 1em;
+        color: $header-color;
+        font-size: 3em;
+    }
+}
+
+// main styles
+main {
+    padding-left: 0;
+    margin-bottom: 5em;
+    
+    h2 {
+        color: $header-secondary-color;
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+}
+
+// aside styles
+aside {
+    
+    form {
+        margin: 1em auto;
+        padding: 0.5em;
+        background-color: $header-color;
+        color: $header-secondary-color;
+        
+        legend {
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        
+        label {
+            float: left;
+            clear: right;
+            margin-right: 5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            margin-bottom: 3em;
+        }
+    }
+}
+
+// article styles
+.art1, .art4 {
+    margin-left: 2em;
+}
+
+article {
+    background-color: $panel-background-color;
+    border: 1px solid $panel-border-color;
+    padding-bottom: 1.5em;
+    
+    h3 {
+        font-size: 1.5em;
+        color: $header-tertiary-color;
+    }
+    
+    p:first-of-type {
+        color: $link-color;
+        line-height: 0.5em;
+    }
+    
+    p {
+        line-height: 1.2em;
+    }
+}
+
+// footer styles
+footer {
+    border-top: 1px solid $navbar-border;
+    padding: 1em;
+    
+    p {
+        margin: 0;
+        text-align: center;
+    }
+    
+    i {
+        margin: 0 1em;
+    }
+}
+
+
+// Grid layout
 .wrapper {
     display: grid;
     grid-gap: 1em;
     margin: 0 auto;
-    background-color: blue;
 }
 
-aside, picture, main, article {
-    padding: 1em;
-}
-
-nav, footer {
-    background-color: red;
+nav {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
 }
 
 header {
     grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    background-color: yellow;
+    grid-row: 2 / 3;
 }
 
-picture {
+.mainimg {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background-color: orange;
+    grid-row: 3 / 4;
 }
 
 main {
     grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 aside {
     grid-column: 4 / 5;
-    grid-row: 2 / 4;
-    background-color: green;
+    grid-row: 3 / 6;
 }
 
 
 .art1 {
     grid-column: 1 / 2;
-    grid-row: 3 / 4
+    grid-row: 4 / 5;
 }
 
 .art2 {
     grid-column: 2 / 3;
-    grid-row: 3 / 4
+    grid-row: 4 / 5;
 }
 
 .art3 {
     grid-column: 3 / 4;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
 }
 
 .art4 {
     grid-column: 1 / 2;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 
 .art5 {
     grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
 }
 
+footer {
+    grid-column: 1 / 5;
+    grid-row: 7 / 8;
+}
+
+// Media queries, adjusting grid for changing widths
 /* Large Devices, Laptops */
 @media (max-width : 1215px) {
     header {
@@ -70,7 +231,7 @@ aside {
         background-color: yellow;
     }
     
-    picture {
+    .mainimg {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         background-color: orange;
@@ -97,7 +258,7 @@ aside {
         background-color: yellow;
     }
     
-    picture {
+    .mainimg {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         background-color: orange;
@@ -147,7 +308,7 @@ aside {
         background-color: yellow;
     }
     
-    picture {
+    .mainimg {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         background-color: orange;
