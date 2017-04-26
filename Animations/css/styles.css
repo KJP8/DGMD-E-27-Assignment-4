@@ -1,0 +1,136 @@
+/* Global styles */
+/* line 2, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+body {
+  text-align: center;
+}
+
+/* image styles */
+/* line 7, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+img {
+  height: 10em;
+}
+
+/*SVG styling */
+/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+svg {
+  height: 16em;
+}
+
+/* line 16, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.st0 {
+  fill: none;
+}
+
+/* Overall SVG animation */
+/* line 21, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+svg {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+/* on page load, fade cat in slowly via changing opacity */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 36, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+#eye:hover {
+  animation-name: eye;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes eye {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 0);
+  }
+}
+
+/* Mustache animation */
+/* line 50, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+#mustache {
+  animation-name: mustache;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+/* On page load, rotate mustache*/
+@keyframes mustache {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-1deg);
+  }
+  66% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+/* line 67, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+#rightear, #leftear {
+  fill: #FF69B4;
+  animation-name: ears;
+  animation-duration: 3s;
+}
+
+@keyframes ears {
+  0% {
+    fill: black;
+  }
+  10% {
+    fill: white;
+  }
+  20% {
+    fill: white;
+  }
+  30% {
+    fill: white;
+  }
+  40% {
+    fill: white;
+  }
+  50% {
+    fill: white;
+  }
+  60% {
+    fill: white;
+  }
+  70% {
+    fill: white;
+  }
+  80% {
+    fill: #ffcfe7;
+  }
+  90% {
+    fill: #ff9cce;
+  }
+  100% {
+    fill: #FFB6C1;
+  }
+}
+
+/*# sourceMappingURL=../css/styles.map */
