@@ -4,25 +4,45 @@ body {
   text-align: center;
 }
 
-/* image styles */
 /* line 7, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+a {
+  color: #00d6d6;
+  text-decoration: none;
+  transition: color 1.5s;
+}
+
+/* line 13, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+a:hover, a:active {
+  color: #d60035;
+}
+
+/* image styles */
+/* line 18, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 img {
-  height: 10em;
+  width: 20em;
+  filter: blur(5px) grayscale(100%);
+  transition: width 2s, filter 2s;
+}
+
+/* line 24, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+img:hover {
+  width: 60em;
+  filter: blur(0) grayscale(0);
 }
 
 /*SVG styling */
-/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 31, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 svg {
   height: 16em;
 }
 
-/* line 16, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 .st0 {
   fill: none;
 }
 
 /* Overall SVG animation */
-/* line 21, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 40, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 svg {
   animation-name: fadein;
   animation-duration: 3s;
@@ -47,7 +67,7 @@ svg {
   }
 }
 
-/* line 36, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 55, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #eye:hover {
   animation-name: eye;
   animation-duration: 2s;
@@ -65,7 +85,7 @@ svg {
 }
 
 /* Mustache animation */
-/* line 50, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 69, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #mustache {
   animation-name: mustache;
   animation-duration: 0.5s;
@@ -90,7 +110,7 @@ svg {
   }
 }
 
-/* line 67, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 86, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #rightear, #leftear {
   fill: #FF69B4;
   animation-name: ears;

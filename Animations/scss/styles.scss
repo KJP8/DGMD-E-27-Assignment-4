@@ -3,10 +3,29 @@ body {
     text-align: center;
 }
 
+// anchor styles
+a {
+    color: darken(aqua, 8%);
+    text-decoration: none;
+    transition: color 1.5s;
+}
+
+a:hover, a:active {
+    color: darken(#FF003F, 8%);
+}
+
 /* image styles */
 img {
-    height: 10em;
+    width: 20em;
+    filter: blur(5px) grayscale(100%);
+    transition: width 2s, filter 2s;
 }
+
+img:hover {
+    width: 60em;
+    filter: blur(0) grayscale(0);
+}
+
 
 /*SVG styling */
 svg {
