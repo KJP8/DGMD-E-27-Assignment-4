@@ -4,45 +4,51 @@ body {
   text-align: center;
 }
 
-/* line 7, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 6, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.introtext {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/* line 12, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 a {
   color: #00d6d6;
   text-decoration: none;
   transition: color 1.5s;
 }
 
-/* line 13, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 18, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 a:hover, a:active {
   color: #d60035;
 }
 
 /* image styles */
-/* line 18, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 23, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 img {
   width: 20em;
   filter: blur(5px) grayscale(100%);
   transition: width 2s, filter 2s;
 }
 
-/* line 24, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 29, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 img:hover {
   width: 60em;
   filter: blur(0) grayscale(0);
 }
 
 /*SVG styling */
-/* line 31, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 36, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 svg {
   height: 16em;
 }
 
-/* line 35, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 40, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 .st0 {
   fill: none;
 }
 
 /* Overall SVG animation */
-/* line 40, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 45, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 svg {
   animation-name: fadein;
   animation-duration: 3s;
@@ -67,7 +73,7 @@ svg {
   }
 }
 
-/* line 55, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 60, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #eye:hover {
   animation-name: eye;
   animation-duration: 2s;
@@ -85,7 +91,7 @@ svg {
 }
 
 /* Mustache animation */
-/* line 69, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 74, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #mustache {
   animation-name: mustache;
   animation-duration: 0.5s;
@@ -110,7 +116,7 @@ svg {
   }
 }
 
-/* line 86, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+/* line 91, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
 #rightear, #leftear {
   fill: #FF69B4;
   animation-name: ears;
@@ -150,6 +156,72 @@ svg {
   }
   100% {
     fill: #FFB6C1;
+  }
+}
+
+/* line 113, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* line 120, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.intro {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+/* line 125, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.part1 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+/* line 130, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.part23 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+}
+
+/* line 135, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.ic1 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+/* line 140, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+.ic2 {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+@media (max-width: 765px) {
+  /* line 147, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+  .intro {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+  }
+  /* line 152, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+  .part1 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+  /* line 157, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+  .part23 {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+  /* line 162, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+  .ic1 {
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
+  }
+  /* line 167, C:/Users/Keeley/Desktop/Mobile Design/Assignment 4/Animations/scss/styles.scss */
+  .ic2 {
+    grid-column: 1 / 1;
+    grid-row: 5 / 6;
   }
 }
 
