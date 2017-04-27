@@ -1,4 +1,3 @@
-
 /* transparent background hack: https://css-tricks.com/snippets/css/transparent-background-images/ */
 .wrapper {
   width: 848px;
@@ -6,8 +5,12 @@
   display: block;
   position: relative;
   display: grid;
+  grid-gap: 15px;
+  grid-template-rows: 16px 36px 285px 98px 226px 126px 26px;
+  grid-template-columns: 71px 291px 227px 73px 128px;
+  background-color: black;
 }
-.wrapper::after {
+/*.wrapper::after {
   content: "";
   background: url(848px-Tableau_I,_by_Piet_Mondriaan.png) no-repeat;
   opacity: 0.5;
@@ -17,7 +20,7 @@
   right: 0;
   position: absolute;
   z-index: auto;   
-}
+}*/
 div {
 	border: 1px solid black;
 	background-color: white;
@@ -25,54 +28,68 @@ div {
 .a {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
+    background-color: red;
 }
 .b {
     grid-row: 2 / 5;
     grid-column: 1 / 3;
+    background-color: white;
 }
 .c {
     grid-row: 1 / 5;
-    grid-column: 3 / 4;
+    grid-column: 3 / 5;
+    background-color: white;
 }
 .d {
     grid-row: 1 / 3;
-    grid-column: 4 / 5;
+    grid-column: 5 / 6;
+    background-color: black;
 }
 .e {
-    grid-row: 2 / 4;
-    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    background-color: white;
 }
 .f {
     grid-row: 4 / 5;
-    grid-column: 4 / 5;
+    grid-column: 5 / 6;
+    background-color: white;
 }
 .g {
-    grid-row: 5 / 7;
+    grid-row: 5 / 8;
     grid-column: 1 / 2;
+    background-color: white;
 }
 .h {
     grid-row: 5 / 6;
     grid-column: 2 / 3;
+    background-color: blue;
 }
 .i {
     grid-row: 5 / 7;
-    grid-column: 3 / 4;
+    grid-column: 3 / 5;
+    background-color: white;
 }
 .j {
     grid-row: 5 / 8;
-    grid-column: 4 / 5;
+    grid-column: 5 / 6;
+    background-color: yellow;
 }
 .k {
     grid-row: 6 / 7;
-    grid-column: 2 / 3
+    grid-column: 2 / 3;
+    background-color: white;
 }
 .l {
     grid-row: 7 / 8;
-    grid-column: 2 / 
+    grid-column: 2 / 4;
+    background-color: white;
     
 }
 .m {
-    
+    grid-row: 7 / 8;
+    grid-column: 4 / 5;
+    background-color: black;
 }
 
 
