@@ -7,6 +7,7 @@ $header-tertiary-color: #39A2B5;
 $link-color: #C84280;
 $panel-background-color: #d9eaed;
 $panel-border-color: #94c4cc;
+$button-color: #ce568d;
 
 /* border box everything in the universe, and what comes before and after, by Paul Irish 
 http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
@@ -39,6 +40,20 @@ a:hover, a:active {
 
 nav, footer {
     background-color: $navbar-color;
+}
+
+button {
+    margin-bottom: 1em;
+    border: none;
+    font: inherit;
+    color: white;
+    padding: 0 12px;
+    background: $button-color;
+    vertical-align: middle;
+    line-height: 30px;
+    min-height: 30px;
+    font-size: 1rem;
+    text-align: center;
 }
 
 // nav styles
