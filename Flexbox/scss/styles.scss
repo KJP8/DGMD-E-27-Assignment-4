@@ -233,6 +233,7 @@ footer {
         background: url(../img/background/background-medium.jpg) no-repeat;
     }
     
+    // Grid reordering
     aside {
         order: 1;
     }
@@ -282,6 +283,7 @@ footer {
         flex: 0 0 90%;
     }
     
+    // Grid reordering
     aside {
         order: 3;
     }
@@ -312,6 +314,7 @@ footer {
         }
     }
     
+    // Grid reordering
     .mainimg {
         order: 1;
         padding-left: 0; 
